@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --ladder: rgba(136, 62, 33, 0.8);
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dice{
+    width: 8vmin;
+    height: 8vmin;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgb(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame{
+    width: 75%;
+    height: 75%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dice-1 .circle{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-2 .circle{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.dice-2 .circle::before{
+    content: '';
+    position: absolute;
+    top: -250%;
+    left: 250%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-3 .circle{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.dice-3 .circle::before{
+    content: '';
+    position: absolute;
+    top: -250%;
+    left: 250%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-3 .circle::after{
+    content: '';
+    position: absolute;
+    top: -125%;
+    left: 125%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-4 .circle{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.dice-4 .circle::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 250%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-4 .circular{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.dice-4 .circular::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 250%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-5 .circle{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.dice-5 .circle::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 250%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-5 .circle::after{
+    content: '';
+    position: absolute;
+    top: 125%;
+    left: 125%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-5 .circular{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.dice-5 .circular::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 250%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-6 .circle{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.dice-6 .circle::before{
+    content: '';
+    position: absolute;
+    top: -250%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-6 .circle::after{
+    content: '';
+    position: absolute;
+    top: -125%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-6 .circular{
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+}
+.dice-6 .circular::before{
+    content: '';
+    position: absolute;
+    top: -250%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+.dice-6 .circular::after{
+    content: '';
+    position: absolute;
+    top: -125%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    border-radius: 50%;
+}
+#main{
+    width: 75vmin;
+    height: 75vmin;
+    margin: auto;
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    overflow: hidden;
+    position: relative;
+}
+.box{
+    height: 7.5vmin;
+    width: 7.5vmin;
+    float: left;
+    border: .2vmin solid white;
+    text-align: center;
+    font-size: 1.5vmin;
+    line-height: 7.46vmin;
+    color: white;
+}
+button{
+    height: 6vmin;
+    width: 15vmin;
+    color: black;
+    font-size: 2.5vmin;
+    border-radius: 3vmin;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 400ms;
+    background: linear-gradient(45deg, rgb(164, 215, 25), rgb(74, 180, 25));
+}
+button:hover{
+    background: linear-gradient(45deg, rgb(238, 59, 59), rgb(204, 21, 134));
+    color: white;
+}
+#p-turn{
+    margin-bottom: 2vmin;
+    font-size: 3vmin;
+}
+.players{
+    position: absolute;
+    top: 69.8vmin;
+    left: 2.3vmin;
+    width: 3vmin;
+    height: 3vmin;
+    border-radius: 50%;
+    opacity: .8;
+    transition-duration: 400ms;
+    transition-property: margin;
+    z-index: 99;
+}
+.players:nth-child(1){background: yellow}
+.players:nth-child(2){background: rgb(82, 255, 47)}
+.bottom{
+    display: flex;
+    width: 75vmin;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 8vmin;
+    position: relative;
+}
+#yeah{
+    background-color: rgb(162, 50, 184);
+}
+#no{
+    background-color: rgb(214, 114, 32);
+}
+#popup{
+    width: 38vmin;
+    height: 12vmin;
+    background: linear-gradient(45deg, rgb(164, 215, 25), rgb(74, 180, 25));
+    position: absolute;
+    left: 15vmin;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 200ms;
+    z-index: 1;
+    color: white;
+    font-size: 3vmin;
+    text-align: center;
+}
+#popup.active{
+    opacity: 1;
+}
